@@ -1,6 +1,4 @@
 # Sistema de Gestão de Torneio de Futebol
-> Projeto Integrador de Banco de Dados Relacional
-
 ---
 
 ## 👥 Integrantes do Grupo
