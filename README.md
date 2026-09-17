@@ -5,11 +5,10 @@
 
 ## 👥 Integrantes do Grupo
 
-- **Nome do Integrante 1** - RA / Matrícula
-- **Nome do Integrante 2** - RA / Matrícula
-- **Nome do Integrante 3** - RA / Matrícula
-- **Nome do Integrante 4** - RA / Matrícula
-- **Nome do Integrante 5** - RA / Matrícula
+- **Gabriel Parreiras Afonseca** - 644
+- **João Paulo de Moura Brandão** - 2288
+- **Matheus Carvalho Michelli Ramazzina Reis** - 2227
+
 
 ---
 
@@ -18,15 +17,13 @@
 **Sistema de Gestão e Monitoramento de Torneios de Futebol**
 
 ### Breve Explicação do Tema
-O projeto consiste em um sistema de banco de dados relacional projetado para automatizar e organizar o gerenciamento completo de campeonatos de futebol. A solução abrange desde o cadastro institucional dos clubes, atletas e praças esportivas até o registro operacional detalhado dos confrontos diretos, suas respectivas súmulas e escalações.
+O projeto consiste em um sistema de banco de dados relacional projetado para automatizar e organizar o gerenciamento completo de campeonatos de futebol. A solução abrange desde o cadastro dos clubes, atletas e estadios até o registro detalhado dos confrontos, suas súmulas e escalações.
 
 O sistema permite registrar o histórico de partidas, controlar o desempenho individual dos atletas em cada jogo (minutos jogados, gols, cartões), catalogar locais de jogos e formalizar o relatório oficial do árbitro para cada evento esportivo.
 
 ---
 
 ## 🗄️ Modelagem do Banco de Dados
-
-O modelo relacional foi estruturado no **MySQL Workbench** respeitando os requisitos acadêmicos estipulados:
 
 ### Entidades do Sistema (6 Entidades)
 1. **`Equipe`**: Armazena as informações dos clubes/times participantes do torneio.
@@ -48,10 +45,4 @@ O modelo relacional foi estruturado no **MySQL Workbench** respeitando os requis
 | **N:M (Muitos para Muitos)** | `Partida` — `Jogador` | Resolvido através da tabela intermediária **`Escalacao`**, permitindo registrar múltiplos atletas em uma partida e vice-versa. |
 | **Auto-relacionamento (1:N)** | `Jogador` — `Jogador` | Permite associar um jogador experiente (mentor/tutor) a um atleta mais jovem da base via `idMentor`. |
 
----
 
-## 🛠️ Tecnologias Utilizadas
-
-- **SGBD**: MySQL
-- **Ferramenta de Modelagem**: MySQL Workbench (EER Diagram)
-- **Linguagem SQL**: DDL / DML
